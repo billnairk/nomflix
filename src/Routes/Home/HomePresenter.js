@@ -60,7 +60,7 @@ const HomePresenter = ({ nowPlaying, upcoming, popular, loading, error }) => (
                 title={movie.original_title}
                 rating={movie.vote_average}
                 year={
-                  movie.release_date == undefined
+                  movie.release_date === undefined
                     ? ""
                     : movie.release_date.substring(0, 4)
                 }
